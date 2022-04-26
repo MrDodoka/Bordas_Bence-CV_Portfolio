@@ -1,0 +1,62 @@
+﻿@model PasswordModel // The model has to be referanced for the form
+<!-- The Index/Main page's content -->
+<div class="bg-light mt-5 p-4 rounded-3 text-secondary">
+    <form method="post">
+        <fieldset>
+            <legend>Password Generator v2.0</legend>
+
+            <!--Switches-->
+            <fieldset>
+                <!--Switch for activating "Number of letters"-->
+                <div class="form-check form-switch">
+                    <input id="isLetter" class="form-check-input" type="checkbox" onchange="IsSwitchClicked(this)">
+                    <label class="form-check-label" for="isLetter">Have letters in the password.</label>
+                </div>
+
+                <!--Switch for activating "Number of numbers"-->
+                <div class="form-check form-switch">
+                    <input id="isNumber" class="form-check-input" type="checkbox" onchange="IsSwitchClicked(this)">
+                    <label class="form-check-label" for="isNumber">Have numbers in the password.</label>
+                </div>
+
+                <!--Switch for activating "Number of symbols"-->
+                <div class="form-check form-switch">
+                    <input id="isSymbol" class="form-check-input" type="checkbox" onchange="IsSwitchClicked(this)">
+                    <label class="form-check-label" for="isSymbol">Have symbols in the password.</label>
+                </div>
+            </fieldset>
+            <!--End of switches-->
+            <div id="errorDiv" class="mt-3 mb-0 text-bold text-secondary">
+                <strong>Remaining free characters: <span id="freeCharacters"></span>.</strong>
+            </div>
+
+            <!--Dropdowns-->
+            <!--Choosing the length of the password-->
+            <div class="form-group">
+                <label asp-for="LengthOfPassword" class="form-label mt-4">Length of the password</label>
+                <select id="lengthSelect" asp-for="LengthOfPassword" class="form-select custom-select" onchange="LengthSelected()"></select>
+            </div>
+
+            <!--Choosing the number of letters in the password-->
+            <div class="form-group">
+                <label asp-for="NumberOfLetters" class="form-label mt-4">Number of letters</label>
+                <select id="letterSelect" asp-for="NumberOfLetters" class="form-select custom-select" onchange="SelectChange()" disabled></select>
+            </div>
+
+            <!--Choosing the number of numbers in the password-->
+            <div class="form-group">
+                <label asp-for="NumberOfNumbers" class="form-label mt-4">Number of numbers</label>
+                <select id="numberSelect" asp-for="NumberOfNumbers" class="form-select custom-select" onchange="SelectChange()" disabled></select>
+            </div>
+
+            <!--Choosing the number of symbols in the password-->
+            <div class="form-group">
+                <label asp-for="NumberOfSymbols" class="form-label mt-4">Number of symbols</label>
+                <select id="symbolSelect" asp-for="NumberOfSymbols" class="form-select custom-select" onchange="SelectChange()" disabled></select>
+            </div>
+            <!--End of dropdowns-->
+
+            <button id="submitButton" type="submit" class="mt-4 btn btn-primary mt-3" disabled>Submit</button>
+        </fieldset>
+    </form>
+</div>

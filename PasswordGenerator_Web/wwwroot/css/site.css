@@ -1,0 +1,15 @@
+.custom-select{
+    width: 75px;
+    text-align:right;
+}
+.custom-ul {
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+.custom-sec-ul {
+    list-style-type: disc;
+    font-size: 18px;
+    font-weight: normal;
+}

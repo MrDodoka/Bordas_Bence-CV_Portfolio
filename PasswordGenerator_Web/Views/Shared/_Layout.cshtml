@@ -1,0 +1,45 @@
+﻿<!-- The layout used for the pages -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/PasswordGenerator_Web.styles.css" asp-append-version="true" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a asp-route="HomePage" class="navbar-brand">Password Generator v2.0</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="mt-auto text-center text-white bg-secondary">
+        <div class="container">
+            <section class="p-3">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-lg-8">
+                        <p class="d-flex justify-content-center align-items-center m-0">
+                            <strong><span class="text-danger">Disclaimer!&nbsp;</span></strong>
+                            This site is NOT made for production.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

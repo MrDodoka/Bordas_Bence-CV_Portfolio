@@ -1,0 +1,7 @@
+﻿<!-- The Result page's content -->
+<div class="bg-light mt-5 p-4 rounded-3 text-secondary text-center">
+    <h2>Your freshly generated password:</h2>
+    
+    <button id="resultButton" class="btn btn-primary m-1" onclick="CopyToClipBoard()">@Context.Session.GetString("result")</button>
+    <p class="mb-0">Click to copy</p>
+</div>
