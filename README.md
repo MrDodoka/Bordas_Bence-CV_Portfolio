@@ -16,9 +16,9 @@ Some of which is in this repository.
 ## What I learnt
 The languages I've learnt are: Java, C#, HTML/CSS, Python.  
 Magority of my own projects are made in C#, but I did make projects in other languges, such as:  
-    * Java => Minecraft Mods, smaller school projects.  
-    * Python => Ren'Py Games, smaller student work related projects.  
-    * C# (.NET Core) => Multiple Unity projects, WPF, Console, ASP.NET, ASP.NET API, Xamarin, Discord bots etc...  
+* Java => Minecraft Mods, smaller school projects.  
+* Python => Ren'Py Games, smaller student work related projects.  
+* C# (.NET Core) => Multiple Unity projects, WPF, Console, ASP.NET, ASP.NET API, Xamarin, Discord bots etc...  
 
 ## In this Repo
 In this repo I've uploaded a a few of my projects.  
