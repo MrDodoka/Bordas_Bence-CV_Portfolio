@@ -22,5 +22,5 @@ Magority of my own projects are made in C#, but I did make projects in other lan
 
 ## In this Repo
 In this repo I've uploaded a a few of my projects.  
-In these projects I've used ASP.NET Core, and .Net Core Console (Both of which as made with .Net 6).  
+In these projects I've used ASP.NET Core, and .Net Core Console (Both of which was made with .Net 6).  
 The Discrod bot, has been made with Nuget Packages (DSharpPlus and CoinGecko API Wrapper mainly).
